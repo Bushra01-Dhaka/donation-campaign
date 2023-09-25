@@ -1,6 +1,6 @@
 .banner-container
 {
-    background-image:linear-gradient(0deg, rgba(240, 238, 238, 0.5), rgba(247, 239, 244, 0.5)), url('./images/banner-pic.jpg');
+    background-image:linear-gradient(0deg, rgba(240, 238, 238, 0.5), rgba(247, 239, 244, 0.5)), url('./banner-pic.jpg');
 	height: 80vh;
     background-position: center;
     background-size: cover;

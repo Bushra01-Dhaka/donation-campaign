@@ -1,5 +1,56 @@
+import PropTypes from 'prop-types';
+import swal from 'sweetalert';
 const Card = ({ card }) => {
-    const { title, image, description, price } = card;
+    const { id,title, image, description, price, title_color } = card;
+
+    const handleAddToDonation = () =>
+    {
+        const addedDonationArray = [];
+        
+        const donatedItems = JSON.parse(localStorage.getItem('donations'));
+        if(!donatedItems) 
+        {
+            addedDonationArray.push(card);
+            localStorage.setItem('donations', JSON.stringify(addedDonationArray));
+            swal({
+                title: "Donated Successfully💚",
+                text: "Congratulations! You have made someone's life brighter. Spread Love & Care💚",
+                icon: "success",
+                button: "OK!",
+                showCancelButton: false,
+                confirmButtonColor: "#38a169",
+            });
+        }
+        else
+        {
+            const isExist = donatedItems.find(item => (item.id === id));
+            if(!isExist)
+            {
+                addedDonationArray.push(...donatedItems,card);
+                localStorage.setItem('donations',JSON.stringify(addedDonationArray));
+                swal({
+                    title: "Donated Successfully💚",
+                    text: "Congratulations! You have made someone's life brighter. Spread Love & Care💚",
+                    icon: "success",
+                    button: "OK!",
+                    showCancelButton: false,
+                    confirmButtonColor: "#38a169",
+                });
+            }
+            else
+            {
+                swal({
+                    title: "Already Donated💚",
+                    text: "Congratulations! You have made someone's life brighter. If you want, you can buy more smiles💚",
+                    icon: "success",
+                    button: "Ok!",
+                    showCancelButton: false,
+                    confirmButtonColor: "#38a169",
+
+                });
+            }
+        }
+    }
 
     return (
         <div className="container mx-auto flex justify-center">
@@ -9,7 +60,7 @@ const Card = ({ card }) => {
                 </div>
 
                 <div className="relative bottom-[95px] flex bg-gradient-to-r from-gray-900 to-transparent w-[80%] mx-auto py-2">
-                    <button className="bg-[#FF444A] m-4 w-[180px] h-[50px] text-white rounded">Donate ${price}</button>
+                    <button onClick={handleAddToDonation} style={{backgroundColor: `${title_color}`}} className="  m-4 w-[180px] h-[50px] text-white rounded">Donate ${price}</button>
                 </div>
 
                 <div className="flex justify-center  w-[80%] mx-auto ">
@@ -23,5 +74,9 @@ const Card = ({ card }) => {
         </div>
     );
 };
+
+Card.propTypes = {
+    card: PropTypes.object.isRequired
+}
 
 export default Card;
