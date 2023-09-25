@@ -6,9 +6,9 @@
       "category": "Community",
       "description": "Support homeless families in our community by providing them with shelter and essentials.",
       "price": 500,
-      "card_color": "#FF5733",
-      "title_color": "#3355FF",
-      "category_color": "#33FF55"
+      "card_color": "#DFCCFB",
+      "title_color": "#713ABE",
+      "category_color": "#FFF3DA"
     },
     {
       "id": 2,
@@ -17,9 +17,9 @@
       "category": "Health",
       "description": "Provide clean and safe drinking water to underserved communities around the world.",
       "price": 250,
-      "card_color": "#FF3399",
-      "title_color": "#99FF33",
-      "category_color": "#3366FF"
+      "card_color": " #0052FF26",
+      "title_color": "#0052FF",
+      "category_color": "#0052FF33"
     },
     {
       "id": 3,
@@ -28,9 +28,9 @@
       "category": "Education",
       "description": "Support bright students in pursuing their dreams by funding their education.",
       "price": 1000,
-      "card_color": "#FF9933",
-      "title_color": "#33FF99",
-      "category_color": "#9933FF"
+      "card_color": "#FFEECC",
+      "title_color": "#D14D72",
+      "category_color": "#FEBBCC"
     },
     {
       "id": 4,
@@ -39,31 +39,31 @@
       "category": "Animals",
       "description": "Help protect and care for animals in need, including shelter and medical treatment.",
       "price": 300,
-      "card_color": "#FF3366",
-      "title_color": "#66FF33",
-      "category_color": "#3366FF"
+      "card_color": "#E7CBCB",
+      "title_color": "#643843",
+      "category_color": "#C88EA7"
     },
     {
       "id": 5,
       "image": "https://i.ibb.co/6ZFYLSZ/Food.png",
       "title": "Food Bank Support",
-      "category": "Hunger",
+      "category": "Food",
       "description": "Contribute to our local food bank to ensure no one goes hungry.",
       "price": 150,
-      "card_color": "#FF6633",
-      "title_color": "#33FF66",
-      "category_color": "#6633FF"
+      "card_color": "#F5FFC9",
+      "title_color": "#884A39",
+      "category_color": "#FFC26F"
     },
     {
       "id": 6,
       "image": "https://i.ibb.co/80tM5q5/environment.webp",
-      "title": "Environmental Conservation",
+      "title": "Nature Care",
       "category": "Environment",
       "description": "Protect our planet by supporting initiatives focused on environmental conservation.",
       "price": 200,
-      "card_color": "#FF33CC",
-      "title_color": "#CCFF33",
-      "category_color": "#33CCFF"
+      "card_color": "#D0E7D2",
+      "title_color": "#618264",
+      "category_color": "#B0D9B1"
     },
     {
       "id": 7,
@@ -72,9 +72,9 @@
       "category": "Health",
       "description": "Contribute to medical research projects aimed at finding cures and treatments for diseases.",
       "price": 800,
-      "card_color": "#FFCC33",
-      "title_color": "#33FFCC",
-      "category_color": "#CC33FF"
+      "card_color": " #0052FF26",
+      "title_color": "#0052FF",
+      "category_color": "#0052FF33"
     },
     {
       "id": 8,
@@ -83,9 +83,9 @@
       "category": "Arts",
       "description": "Support local artists and cultural events to enrich our community's cultural landscape.",
       "price": 120,
-      "card_color": "#FF33FF",
-      "title_color": "#FF33FF",
-      "category_color": "#33FFFF"
+      "card_color": "#ECECEC",
+      "title_color": "#FF8B13",
+      "category_color": "#F2CD5C"
     },
     {
       "id": 9,
@@ -94,9 +94,9 @@
       "category": "Emergency",
       "description": "Provide immediate assistance to communities affected by natural disasters and emergencies.",
       "price": 400,
-      "card_color": "#CC33FF",
-      "title_color": "#FF33CC",
-      "category_color": "#33CCFF"
+      "card_color": "#E9FFC2",
+      "title_color": "#146C94",
+      "category_color": "#AAC8A7"
     },
     {
       "id": 10,
@@ -105,9 +105,9 @@
       "category": "Sports",
       "description": "Empower young athletes by supporting youth sports programs and facilities.",
       "price": 180,
-      "card_color": "#66FF33",
-      "title_color": "#33FF66",
-      "category_color": "#FF6633"
+      "card_color": "#FBF0B2",
+      "title_color": "#F24C3D",
+      "category_color": "#FBD85D"
     },
     {
       "id": 11,
@@ -116,20 +116,20 @@
       "category": "Community",
       "description": "Enhance the quality of life for elderly individuals through specialized care and companionship.",
       "price": 300,
-      "card_color": "#3366FF",
-      "title_color": "#FF3366",
-      "category_color": "#66FF33"
+      "card_color": "#DFCCFB",
+      "title_color": "#713ABE",
+      "category_color": "#FFF3DA"
     },
     {
       "id": 12,
       "image": "https://i.ibb.co/KmgDWHb/computer-lab.jpg",
-      "title": "Educational Technology for Schools",
+      "title": "Educational Technology",
       "category": "Education",
       "description": "Equip schools with the latest educational technology to enhance learning opportunities.",
       "price": 600,
-      "card_color": "#99FF33",
-      "title_color": "#33FF99",
-      "category_color": "#FF9933"
+      "card_color": "#FFEECC",
+      "title_color": "#D14D72",
+      "category_color": "#FEBBCC"
     }
   ]
   
