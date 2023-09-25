@@ -16,7 +16,7 @@ const Card = ({ card }) => {
                 title: "Donated Successfully💚",
                 text: "Congratulations! You have made someone's life brighter. Spread Love & Care💚",
                 icon: "success",
-                button: "OK!",
+                button: "Close",
                 showCancelButton: false,
                 confirmButtonColor: "#38a169",
             });
@@ -32,7 +32,7 @@ const Card = ({ card }) => {
                     title: "Donated Successfully💚",
                     text: "Congratulations! You have made someone's life brighter. Spread Love & Care💚",
                     icon: "success",
-                    button: "OK!",
+                    button: "Close",
                     showCancelButton: false,
                     confirmButtonColor: "#38a169",
                 });
@@ -43,7 +43,7 @@ const Card = ({ card }) => {
                     title: "Already Donated💚",
                     text: "Congratulations! You have made someone's life brighter. If you want, you can buy more smiles💚",
                     icon: "success",
-                    button: "Ok!",
+                    button: "Close",
                     showCancelButton: false,
                     confirmButtonColor: "#38a169",
 
@@ -53,7 +53,7 @@ const Card = ({ card }) => {
     }
 
     return (
-        <div className="container mx-auto flex justify-center">
+        <div className="container mx-auto flex justify-center mt-8">
             <div>
                 <div className="flex justify-center ">
                     <img className="w-[80%] h-[70vh] object-cover" src={image} alt="" />

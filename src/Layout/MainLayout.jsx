@@ -3,13 +3,13 @@ import NavBar from "../Components/Header/NavBar";
 
 const MainLayout = () => {
     return (
-      <div className="bg-white shadow-lg">
+      <div className="bg-white">
 
         <div className="shadow-lg">
         <NavBar></NavBar>
         </div>
 
-        <div className="min-h-screen my-4">
+        <div className="min-h-screen ">
             <Outlet></Outlet>
         </div>
 
