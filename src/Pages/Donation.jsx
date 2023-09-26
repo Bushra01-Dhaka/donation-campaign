@@ -35,7 +35,10 @@ const Donation = () => {
 
                     <div className="flex justify-center my-4">
                         {
-                           donation.length > 4 && <button onClick={() => setIsShowBtn(!isShowBtn)} className="bg-[#009444] hover:bg-green-500 text-white py-4 px-5 mb-4 rounded">{isShowBtn ? "See Less" : "See More"}</button>
+                        //    donation.length > 4 && <button onClick={() => setIsShowBtn(!isShowBtn)} className="bg-[#009444] hover:bg-green-500 text-white py-4 px-5 mb-4 rounded">{isShowBtn ? "See Less" : "See More"}</button>
+        
+                       donation.length > 4 && <button onClick={() => setIsShowBtn(!isShowBtn)}  className={`bg-green-500 p-4 text-white mb-4 rounded ${!isShowBtn ? 'bg-green-500 '  : 'bg-white p-0'}`}>{isShowBtn ? "" : "See More"}</button>
+
                         }
 
                     </div>

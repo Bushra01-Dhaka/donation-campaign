@@ -4,11 +4,13 @@ import Home from "../Pages/Home";
 import Donation from "../Pages/Donation";
 import Statistcs from "../Pages/Statistcs";
 import DonationDetails from "../Pages/DonationDetails/DonationDetails";
+import Error from "../Pages/Error/Error";
 
 const myRoutes = createBrowserRouter([
     {
         path: "/",
         element:<MainLayout></MainLayout>,
+        errorElement:<Error></Error>,
         children:[
             {
                 path: "/",
