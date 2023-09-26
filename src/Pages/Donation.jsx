@@ -29,7 +29,7 @@ const Donation = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 mt-8">
                         {
                             isShowBtn ? donation.map(card => <DonationCard key={card.id} card={card}></DonationCard>) : donation.slice(0, 4).map(card => <DonationCard key={card.id} card={card}></DonationCard>)
-                            // donation.map(card => <DonationCard key={card.id} card={card}></DonationCard>)
+                          
                         }
                     </div>
 

@@ -1,20 +1,35 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigation } from "react-router-dom";
 import NavBar from "../Components/Header/NavBar";
+import Spinner from "../Components/Spinner/Spinner";
 
 const MainLayout = () => {
-    return (
-      <div className="bg-white">
+  const navigation = useNavigation();
+  const isLoadingProducts = navigation.state === "loading";
 
-        <div className="shadow-lg">
+  return (
+    <div className="bg-white">
+
+      <div className="shadow-lg">
         <NavBar></NavBar>
-        </div>
-
-        <div className="min-h-screen ">
-            <Outlet></Outlet>
-        </div>
-
       </div>
-    );
+
+      {
+        isLoadingProducts? <Spinner></Spinner> :  <div className="min-h-screen ">
+        <Outlet></Outlet>
+      </div> 
+      }
+
+{/* 
+      <div className="min-h-screen ">
+        <Outlet></Outlet>
+      </div> */}
+
+
+
+
+
+    </div>
+  );
 };
 
 export default MainLayout;
