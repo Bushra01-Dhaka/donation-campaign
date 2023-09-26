@@ -26,10 +26,6 @@ const Statistcs = () => {
         const donatedItems = JSON.parse(localStorage.getItem('donations'));
         if (donatedItems) {
             setDonation(donatedItems);
-            // const total = donatedItems.reduce((preValue, CurrentItem)=> preValue + CurrentItem.price, 0);
-            // SetTotalDonation(total);
-            // const totalPercentage = ((total/6000)*100).toFixed(2);
-            // setTotalPercentage(totalPercentage);
             const totalPercentage = (((donatedItems.length) / 12) * 100).toFixed(2);
             setTotalPercentage(totalPercentage);
 
@@ -51,7 +47,21 @@ const Statistcs = () => {
 
     }, []);
 
+    const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
+        // Calculate the position for the label
+        const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
+        const x = cx + radius * Math.cos(-midAngle * (Math.PI / 180));
+        const y = cy + radius * Math.sin(-midAngle * (Math.PI / 180));
 
+        // Display the percentage with a percentage sign
+        const percentage = `${(percent * 100).toFixed(2)}%`;
+
+        return (
+            <text x={x} y={y} fill="white" textAnchor="middle" dominantBaseline="central">
+                {percentage}
+            </text>
+        );
+    };
 
     console.log(donation);
 
@@ -68,7 +78,9 @@ const Statistcs = () => {
                     cy="50%"
                     outerRadius={100}
                     fill="#8884d8"
-                    label={({ name, value }) => `${name}: ${(value.toFixed(2))}%`}
+                    // label={({ name, value }) => `${name}: ${(value.toFixed(2))}%`}
+                    labelLine={false} 
+                    label={renderCustomizedLabel}
                 >
                     {data.map((entry, index) => (
                         <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
