@@ -13,8 +13,8 @@ const Statistcs = () => {
     const [donation, setDonation] = useState([]);
     const [totalDonatePercentage, setTotalPercentage] = useState(0);
     const [data, setData] = useState([
-        { name: 'series A', value: 10 },
-        { name: 'series B', value: 15 },
+        { name: 'Total Donation', value: 100 },
+        { name: 'Your Donation', value: 0 },
     ]);
  
 
