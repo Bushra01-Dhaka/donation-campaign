@@ -66,10 +66,10 @@ const Statistcs = () => {
     console.log(donation);
 
     return (
-        <div className='container mx-auto h-[80vh] flex justify-center items-center'>
+        <div className='container mx-auto md:h-[80vh] flex justify-center items-center'>
 
 
-            <PieChart width={800} height={400}>
+            <PieChart width={400} height={400}>
                 <Pie
                     data={data}
                     dataKey="value"
